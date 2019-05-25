@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html>
+
+	<head>
+    		<title>John, Anderson, Daniel's Super Cool Game</title>
+	</head>
+
+	<button onclick="superCoolFunction()">Click ME!!!</button>
+	<button onclick="mongoosifier()">Click here to see a mongoose</button>
+
+	<p id="name"></p>
+	<p id="mongoose"></p>
+
+	<body>
+    	<script>
+		function superCoolFunction() {
+			var name = prompt("Enter your name, fool", "Mongoose Man");
+			document.getElementById("name").innerHTML = "Your name is " + name;
+		}
+		</script>
+
+		<script>
+		function mongoosifier() {
+			var answer = prompt("Would you like to see a mongoose?", "Yes");
+			if (answer != "Yes" && answer != "yes") {
+				answer = prompt("Are you sure?", "Nevermind, I want to see a mongoose");
+				if (answer != "Nevermind, I want to see a mongoose") {
+					alert("Too bad");
+				}
+			}
+			document.getElementById("mongoose").innerHTML = "<img src=\"mongoose.jpeg\" width=\"700\" height=\"700\" alt=\"This was supposed to be a mongoose\"></a>";
+		}
+		</script>
+	</body>
+
+</html>
